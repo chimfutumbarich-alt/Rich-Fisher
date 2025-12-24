@@ -1,73 +1,45 @@
 
-import { Property, PropertyType, UserRole, Ad } from './types';
+import { Property, PropertyType, Ad } from './types';
 
 export const ADMIN_CONTACT = {
-  companyName: "Wealth Estate Global",
-  address: "123 Opulence Avenue, Suite 500, Gold Coast",
-  phone: "+1 800-WEALTH-01",
+  companyName: "Wealth Estate Limited",
+  address: "Gold Tower, 456 Prosperity Road, Lusaka, Zambia",
+  phone: "+260 971 234 567",
   email: "admin@wealthestate.com",
-  whatsApp: "+1234567890"
+  whatsApp: "+260971234567",
+  adminBankAccount: "STB-WE-9988776655-ZMW", // Only Admin bank account displayed
+  adminBankName: "Standard Trust Bank"
 };
 
 export const MOCK_PROPERTIES: Property[] = [
   {
     id: '1',
-    title: 'Modern Sunset Villa',
-    description: 'A luxurious villa with breathtaking ocean views and a private pool.',
-    price: 1250000,
-    location: 'Malibu, CA',
+    title: 'Emerald Park Mansion',
+    description: 'A 6-bedroom masterpiece with marble flooring and a private tennis court.',
+    price: 850000,
+    location: 'Leopards Hill, Lusaka',
     type: PropertyType.HOUSE_SALE,
-    imageUrl: 'https://picsum.photos/seed/villa1/800/600',
+    imageUrls: ['https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800'],
     sellerId: 's1',
-    sellerName: 'John Agent',
-    sellerPhone: '555-0101',
-    sellerEmail: 'john@agents.com',
-    sellerWhatsApp: '5550101',
+    sellerName: 'Kelvin Mwamba',
+    sellerPhone: '+260965000111',
+    sellerEmail: 'kelvin@agents.com',
+    sellerWhatsApp: '260965000111',
     createdAt: Date.now(),
   },
   {
     id: '2',
-    title: 'Fertile Agricultural Land',
-    description: '50 acres of prime farming land with water rights.',
-    price: 450000,
-    location: 'Iowa, USA',
+    title: 'Prime 10-Acre Industrial Land',
+    description: 'Flat, secure land perfect for multi-purpose development near the main highway.',
+    price: 120000,
+    location: 'Chilanga, Lusaka',
     type: PropertyType.LAND_SALE,
-    imageUrl: 'https://picsum.photos/seed/land1/800/600',
+    imageUrls: ['https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800'],
     sellerId: 's2',
-    sellerName: 'Sarah Smith',
-    sellerPhone: '555-0102',
+    sellerName: 'Sarah Phiri',
+    sellerPhone: '+260955888999',
     sellerEmail: 'sarah@owner.com',
-    sellerWhatsApp: '5550102',
-    createdAt: Date.now(),
-  },
-  {
-    id: '3',
-    title: 'Industrial Logistics Hub',
-    description: 'High-ceiling warehouse with 10 loading docks.',
-    price: 3500000,
-    location: 'Chicago, IL',
-    type: PropertyType.WAREHOUSE_SALE,
-    imageUrl: 'https://picsum.photos/seed/warehouse1/800/600',
-    sellerId: 's1',
-    sellerName: 'John Agent',
-    sellerPhone: '555-0101',
-    sellerEmail: 'john@agents.com',
-    sellerWhatsApp: '5550101',
-    createdAt: Date.now(),
-  },
-  {
-    id: '4',
-    title: 'Luxury Penthouse Loft',
-    description: 'Chic urban living in the heart of the city.',
-    price: 4500,
-    location: 'New York, NY',
-    type: PropertyType.APARTMENT_RENT,
-    imageUrl: 'https://picsum.photos/seed/apt1/800/600',
-    sellerId: 's3',
-    sellerName: 'David Rent',
-    sellerPhone: '555-0103',
-    sellerEmail: 'david@rentals.com',
-    sellerWhatsApp: '5550103',
+    sellerWhatsApp: '260955888999',
     createdAt: Date.now(),
   }
 ];
@@ -75,9 +47,10 @@ export const MOCK_PROPERTIES: Property[] = [
 export const MOCK_ADS: Ad[] = [
   {
     id: 'ad1',
-    title: 'Premium Home Insurance',
-    imageUrl: 'https://picsum.photos/seed/ad1/400/200',
+    title: 'Home Furnishing Expo 2025',
+    imageUrl: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400',
     link: '#',
-    isActive: true
+    isActive: true,
+    merchantAccount: 'ACC-9900'
   }
 ];

@@ -16,9 +16,9 @@ export enum UserRole {
 
 export enum PaymentMethod {
   BANK_TRANSFER = 'BANK_TRANSFER',
-  CREDIT_CARD = 'CREDIT_CARD',
-  PAYPAL = 'PAYPAL',
-  MOBILE_MONEY = 'MOBILE_MONEY'
+  MTN_MONEY = 'MTN_MOBILE_MONEY',
+  AIRTEL_MONEY = 'AIRTEL_MOBILE_MONEY',
+  ZAMTEL_MONEY = 'ZAMTEL_MOBILE_MONEY'
 }
 
 export interface User {
@@ -40,7 +40,7 @@ export interface Property {
   price: number;
   location: string;
   type: PropertyType;
-  imageUrl: string;
+  imageUrls: string[]; // Changed from imageUrl: string
   sellerId: string;
   sellerName: string;
   sellerPhone: string;
@@ -55,4 +55,5 @@ export interface Ad {
   imageUrl: string;
   link: string;
   isActive: boolean;
+  merchantAccount: string;
 }
