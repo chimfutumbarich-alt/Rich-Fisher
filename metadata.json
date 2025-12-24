@@ -1,0 +1,8 @@
+{
+  "name": "Wealth Estate",
+  "description": "A premium real estate platform specializing in the sale and rental of luxury houses, lands, and commercial properties like warehouses, featuring a Blue and Gold aesthetic.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
